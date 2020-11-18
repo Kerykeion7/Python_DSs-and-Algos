@@ -1,4 +1,4 @@
-from Queues.LinkedListQueues import SinglyLinkedNode
+from Queues.LinkedListQueues import SinglyLinkedNode as slNodeClass
 
 class LinkedListQ():
     Head = None
@@ -14,7 +14,7 @@ class LinkedListQ():
         return self.__size == 0
 
     def enqueue(self, value):
-        node = SinglyLinkedNode(value)
+        node = slNodeClass.SinglyLinkedNode(value)
         if self.isEmpty():
             self.Head = node
         else:
