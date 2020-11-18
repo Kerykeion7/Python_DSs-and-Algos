@@ -1,5 +1,5 @@
 from LinkedLists import DoublyLinkedListIterator
-from LinkedLists import DoublyLinkedNode
+from LinkedLists import DoublyLinkedNode as nodeClass
 
 class DoublyLinkedList():
     __length = 0
@@ -56,7 +56,7 @@ class DoublyLinkedList():
         return self.__length == 0
 
     def push_front(self, value):
-        node = DoublyLinkedNode(value)
+        node = nodeClass.DoublyLinkedNode(value)
         if self.__first_push(node) == False:
             node.Next = self.Head
             self.Head.Previous = node
@@ -64,7 +64,7 @@ class DoublyLinkedList():
         self.__length += 1
 
     def push_back(self, value):
-        node = DoublyLinkedNode(value)
+        node = nodeClass.DoublyLinkedNode(value)
         if self.__first_push(node) == False:
             node.Previous = self.Tail
             self.Tail.Next = node
