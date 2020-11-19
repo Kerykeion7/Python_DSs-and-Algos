@@ -56,5 +56,15 @@ class Test_test_ArrayQ(unittest.TestCase):
         self.assertRaises(IndexError, q.getAt, 4)
         self.assertRaises(IndexError, q.getAt, -1)
 
+    def test_Dequeuing(self):
+        q = self.__setUpMainArrayQ()
+        self.assertFalse(q.getAt(0) is None)
+        self.assertFalse(q.getAt(q.getSize() - 1) is None)
+        self.assertEquals(q.getAt(0), 1)
+        self.assertEquals(q.getAt(q.getSize() - 1), 6)
+        q.dequeue()
+        self.assertFalse(q.getAt(0) is 1)
+        self.assertEqual(q.getAt(0), 3)
+
 if __name__ == '__main__':
     unittest.main()
