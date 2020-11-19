@@ -48,9 +48,6 @@
     <Compile Include="HashTables\HashTable.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="HashTables\HashTableNode.py">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Include="HashTables\test_HashTable.py">
       <SubType>Code</SubType>
     </Compile>
