@@ -11,8 +11,8 @@ class ArrayQ:
     def isFull(self):
         return self.__length == self.__maxCap
     def getAt(self, index):
-        if index < 0 or index > self.__length:
-            raise Exception("Index out of bounds")
+        if index < 0 or index > self.__length - 1:
+            raise IndexError
         return self.__data[index]
     def enqueue(self, value):
         if(self.isFull()):
