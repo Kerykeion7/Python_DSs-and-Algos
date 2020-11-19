@@ -27,6 +27,7 @@
   <ItemGroup>
     <Folder Include="Arrays\" />
     <Folder Include="LinkedLists\" />
+    <Folder Include="HashTables\" />
     <Folder Include="Queues\" />
     <Folder Include="Queues\ArrayQueues\" />
     <Folder Include="Queues\LinkedListQueues\" />
@@ -42,6 +43,18 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Arrays\test_DynamicArray.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="HashTables\HashTable.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="HashTables\HashTableNode.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="HashTables\test_HashTable.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="HashTables\__init__.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="LinkedLists\DoublyLinkedList.py">
