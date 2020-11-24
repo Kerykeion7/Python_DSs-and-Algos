@@ -81,7 +81,7 @@ class DoublyLinkedList():
         if index == self.__length:
             self.push_back(value)
             return
-        node = DoublyLinkedNode(value)
+        node = nodeClass.DoublyLinkedNode(value)
         current = self.Head
         for n in range(index - 1):
             current = current.Next
@@ -163,8 +163,8 @@ class DoublyLinkedList():
 
     def remove(self, value):
         index = 0
-        for item in self:
-            if item.Value == value:
+        for i in range(self.get_length()):
+            if self.get_at(i) == value:
                 self.remove_at(index)
                 return
             index += 1
