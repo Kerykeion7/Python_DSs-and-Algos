@@ -8,7 +8,7 @@ class DynamicArray:
 
     def __init__(self, capacity = 4):
         self.__capacity = capacity
-        self.__items = ["NULL"]*self.__capacity
+        self.__items = [None]*self.__capacity
 
     def push(self, item):
         self.__resize()
@@ -31,7 +31,7 @@ class DynamicArray:
     def pop(self):
         self.__raise_if_index_out_of_bounds(self.Count - 1)
         popped = self.__items[self.Count - 1]
-        self.__items[self.Count - 1] = "NULL"
+        self.__items[self.Count - 1] = None
         self.Count -= 1
         self.__resize()
         return popped
@@ -79,7 +79,7 @@ class DynamicArray:
                 self.__allocate()
 
     def __allocate(self):
-        new_items = ["NULL"]*self.__capacity
+        new_items = [None]*self.__capacity
         new_items = self.__items[0:len(self.__items)] + new_items[len(self.__items):self.__capacity]
         self.__items = new_items
 
