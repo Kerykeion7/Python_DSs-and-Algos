@@ -22,5 +22,11 @@ class Test_test_LinkedListQ(unittest.TestCase):
         q = self.__setUpMainTestQ()
         self.assertEqual(8, q.getSize())
 
+    def test_dequeuing_and_enqueuing(self):
+        q = self.__setUpMainTestQ()
+        self.assertTrue(q.dequeue() == 1
+                        and q.dequeue() == 3
+                        and q.getSize() == 6)
+
 if __name__ == '__main__':
     unittest.main()
