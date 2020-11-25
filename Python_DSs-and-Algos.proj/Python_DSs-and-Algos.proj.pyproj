@@ -28,6 +28,7 @@
     <Folder Include="Arrays\" />
     <Folder Include="LinkedLists\" />
     <Folder Include="HashTables\" />
+    <Folder Include="BinarySearches\" />
     <Folder Include="Queues\" />
     <Folder Include="Queues\ArrayQueues\" />
     <Folder Include="Queues\LinkedListQueues\" />
@@ -43,6 +44,15 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Arrays\test_DynamicArray.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BinarySearches\BinarySearch.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BinarySearches\test_BinarySearch.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BinarySearches\__init__.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="HashTables\HashTable.py">
