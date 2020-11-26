@@ -1,15 +1,14 @@
 class BinarySearch:
-    def __binary_search(self, array:list, searchVal:int) -> int:
-        mid = (int)(len(array) / 2)
-        val = array[mid]
-        if len(array) > 0:
-            if val > searchVal:
-                return self.__binary_search(array[0:mid], searchVal)
-            if val < searchVal:
-                return self.__binary_search(array[mid:len(array)], searchVal)
-        return val
+    def __binary_search(self, array:list, left, right, searchVal:int) -> int:
+        index = (int)((right - left) / 2)
+        if index <= left: index += left
+        val = array[index]
 
+        if val > searchVal: return self.__binary_search(array, left, index, searchVal)
+        if val < searchVal: return self.__binary_search(array, index, right, searchVal)
+        if val == searchVal: return index
 
+        return -1;
 
     def binarySearch(self, array:list, searchVal:int) -> int:
         if not isinstance(array, list):
@@ -19,4 +18,4 @@ class BinarySearch:
         if array.count(searchVal) == 0:
             raise ValueError
         array.sort()
-        return self.__binary_search(array, searchVal)
+        return self.__binary_search(array, 0, len(array), searchVal)
