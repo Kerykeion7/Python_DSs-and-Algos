@@ -29,6 +29,7 @@
     <Folder Include="LinkedLists\" />
     <Folder Include="HashTables\" />
     <Folder Include="BinarySearches\" />
+    <Folder Include="BSTs\" />
     <Folder Include="Queues\" />
     <Folder Include="Queues\ArrayQueues\" />
     <Folder Include="Queues\LinkedListQueues\" />
@@ -53,6 +54,18 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="BinarySearches\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BSTs\BinarySearchTree.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BSTs\Node.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BSTs\test_Bst.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BSTs\__init__.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="HashTables\HashTable.py">
